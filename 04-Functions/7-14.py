@@ -1,0 +1,17 @@
+def f(number1,number2,operator):
+    result = 0
+    operator = operator.split('"')[0]
+    if operator == '+':
+        result = number1 + number2
+    elif operator == '-':
+        result = number1-number2
+    elif operator == '*':
+        result = number1*number2
+    elif operator == '%':
+        result = number1%number2
+    elif operator == '**':
+        result = number1**number2
+    return result
+
+if __name__ == '__main__':
+    print(f(2,3, "+"))
